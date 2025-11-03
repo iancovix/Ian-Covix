@@ -1,0 +1,3 @@
+RewriteCond %{HTTP_HOST}
+!^www.iancovix.netlify.app$ [NC]
+RewriteRule ^(.*)app$http://www.iancovix.netlify.app/$ 1 [L,R=301]
