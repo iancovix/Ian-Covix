@@ -1,6 +1,18 @@
-.int p{
-        color: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}.int p{
+        color: green;
+        text-align: start;
         margin: 10px;
+        word-wrap: wrap;
+}
+.heading, .newsp{
+    word-wrap: wrap;
+    margin: 0;
+    text-align: center ;
 }
 
 .moreNews{

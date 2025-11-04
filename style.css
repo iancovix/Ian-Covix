@@ -346,3 +346,6 @@ footer{
     padding-top: 40px;
     
 }
+#newsDiv{
+    word-wrap: wrap;
+}
