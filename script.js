@@ -104,27 +104,28 @@ tooltip.addEventListener('click', () => {
 
 console.log('Portfolio updated on 5th Sep 2025');
 
-// Exampling my self
-let age = 8;
+// Exampling my self with the if else statements
+/*let age = 8;
 if (age < 10) console.log('too young');
 else if (age > 20) console.log('how are you');
-
-function user(a, b) {
+*/
+/*function user(a, b) {
     let result = a / b;
     console.log(result);
 }
 user(10, 20);
-
+*/
 let name = document.getElementById('name');
 let password = document.getElementById('password');
 
-const images = {
+/*
+this is an object const images = {
     id: "Car",
     image: "./logo.jpg",
     content: "I designed this with all my heart",
 };
 console.log(images.content);
-
+*/
 // form submitting
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
@@ -172,7 +173,7 @@ form.addEventListener('submit', (e) => {
     
     
 });
-const obj = { name: 'ian', age: 23, country: 'Uganda' };
+/*const obj = { name: 'ian', age: 23, country: 'Uganda' };
 console.log(obj.country);
 
 const array = [1, 2, 3, 4, 5];
@@ -198,7 +199,7 @@ async function fetchData() {
         const headers = { 'Content-Type': 'application/json' };
         const body = JSON.stringify(data);
         const response = await fetch('', { method: 'POST', headers, body });
-        const result = await response.json();
+        const result = await response.json
         const fetchResult = result.map(item => {return`${item.name} : ${item.age}`;}).join('</br>');
         print.innerHTML += fetchResult;
         body += print;
@@ -231,7 +232,7 @@ async function sendData() {
     }
 }
 */
-
+/*this is a string method which looks for the position of a key in a string 
 localStorage.setItem("username", "Ian");
 console.log(localStorage.getItem("username"));
 
@@ -239,6 +240,7 @@ const tural = "@";
 const rest = 'iancovix@gmail.com';
 const result6 = rest.indexOf(tural);
 console.log(result6);
+*/
 async function loadmessage() {
     try {
         const res = await fetch('https://formcarry.com/s/NBrbREXTtEN', {
@@ -366,5 +368,21 @@ const  bright = document.querySelector('bright');
  News();
  */
  const btnNews = document.querySelector('.btn-news').addEventListener('click',() => {
-     window.location.href='https://iancovix.netlify.app/news.html';
+     window.location.href='https://iancovix.vercel.app/news.html';
  } )
+ document.querySelectorAll('details').forEach((detail)=> {
+     detail.addEventListener('toggle',()=> {
+         const content = detail.querySelector('.content-project');
+         if (detail.open) {
+             
+           content.style.height= content.scrollHeight + 'px';  
+         } else {
+           content.style.height= '0';
+        void   content.offsetHeight;content.style.height= '0';
+         }
+     });
+ });
+ content.addEventListener('transitioned',()=> {
+     content.style.height= 
+     'auto'
+ });

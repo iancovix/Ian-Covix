@@ -349,3 +349,167 @@ footer{
 #newsDiv{
     word-wrap: wrap;
 }
+.footer-section{
+   /* display: grid;
+    grid-template-columns: repeat(2, 1fr);*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    place-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.contact-info{
+    display: grid;
+    border: 0px solid grey;
+    grid-template-columns: repeat(1, 1fr);
+}
+.intro img{
+    box-shadow: 1px 3px 5px white;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    text-shadow: none;
+}
+.aboutme .aboutwords{
+    text-align: start;
+    font-family: "Montserrat",sans-serif;
+    font-size: clamp(1.5rem, 2vw, 1.4rem);
+    line-height: 1.3;
+}
+.aboutme h4{
+    text-shadow: none;
+    font-family: "Montserrat",sans-serif;
+    
+}
+.slide h5{
+    font-size: clamp(1.3rem, 2vw ,2rem);
+    
+}
+#contact-form h5{ font-family: "Montserrat", sans-serif;
+}
+.proj h3{
+    text-shadow: none;
+}
+details{
+    transition: all .5s ease-out;
+}
+.slider .slide:hover{
+    transform: scale(1);
+}
+details .content-project{
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+    height: 0;
+}
+/*details[open] .content-project{
+    max-height: 100px;
+    
+}*/
+#faq{
+    background: rgb(255,255,255,0.1);
+    border-radius: 15px;
+    border: 1px solid rgb(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgb(0,0,0,.4);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.6rem;
+}
+#faq h5{
+    font-size: clamp(1.4rem, 2vw + .3rem, 1.7rem);
+    text-align: center;
+     color: #93A1B5;
+}
+#faq p{
+    color: #7E838A;
+}
+/*new background styling for each section
+*/
+.aboutme {
+    
+    background: rgb(255,255,255,0.1);
+    border-radius: 15px;
+    border: 1px solid rgb(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgb(0,0,0,.4);
+    -webkit-backdrop-filter: blur(10px);
+}
+.project{
+    border-radius: 16px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding-bottom: 10px;
+    background: rgb(255,255,255,.1);
+    border: 1px solid rgb(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgb(0,0,0,.4);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid transparent;
+}
+.slider{
+    background : none;
+    box-shadow: none;
+   border: none;
+   padding: 0 0 0 0;
+}
+.slider .slide{
+    box-shadow: 0 1px 2px white;
+}
+.proj{
+    border-radius: 16px;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    
+    border-bottom-right-radius: 0;
+    background: rgb(255,255,255,0.1);
+    
+    border: 1px solid rgb(255,255,255,0.2);
+    color: #4F86D4;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgb(0,0,0,.4);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 0px solid ;
+}
+.proj h3:first-letter{
+    color : white;
+}
+.aboutme h4{
+    color:  #4F86D4;
+}
+.aboutme h4:first-letter{
+    color: white;
+}
+.intro .word{
+    font-size: clamp(2.5rem, 2vw + .5rem, 2.3rem);
+}
+@media screen and (min-width: 481px)and (max-width: 768px){
+    .intro .word{
+        color:  #4F86D4;
+        font-size: 3.8rem;
+    }
+    #faq{
+        display: grid;
+        place-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .intro .word{
+        color:  #4F86D4;
+        font-size: 3.8rem;
+    }
+    #faq{
+        display: grid;
+        place-items: center;
+        gap: 10px; 
+    }
+}
+.contacts p{
+    font-size: clamp(.8rem, 2vw + .5rem, 1.3rem);
+    font-weight: 500;
+}
