@@ -11,8 +11,8 @@
 }
 .heading, .newsp{
     word-wrap: wrap;
-    margin: 0;
-    text-align: center ;
+    margin: 5px;
+    text-align: start ;
 }
 
 .moreNews{
@@ -24,7 +24,6 @@
     transition: all .5s ease ;
     z-index: 1;
     border-radius: 5px;
-    justify-self: center;
 }
 .moreNews:hover{
     color: white;

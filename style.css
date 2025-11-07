@@ -513,3 +513,40 @@ details .content-project{
     font-size: clamp(.8rem, 2vw + .5rem, 1.3rem);
     font-weight: 500;
 }
+.hamburgermenu span{
+    border-radius: 0px;
+}
+.loaders p{
+    border-radius: 0;
+    transition: rotate(45px);
+    background: linear-gradient(to top, white, #338AF0);
+}
+.project .slide:nth-child(1){
+    transform: translateX(-50%) scale(.5);
+    opacity: .0;
+}
+
+.project .slide:nth-child(1).sho{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+.project .slide:nth-child(2){
+    transform: translateX(10%) scale(.5);
+    opacity: 0.0;
+}
+
+.project .slide:nth-child(2).sho{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+
+.project .slide:nth-child(3){
+    transform: rotate(10deg) scale(.5);
+    
+    opacity: 0.0;
+}
+
+.project .slide:nth-child(3).sho{
+    transform: rotate(0) scale(1);
+    opacity : 1;
+}

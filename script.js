@@ -59,7 +59,7 @@ setInterval(updateTime, 1000);
                 
             }
         })
-    },{threshold: .5});
+    },{threshold: .6});
     slides.forEach((slide)=> {
     observer.observe(slide)
     })
