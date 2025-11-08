@@ -1,3 +1,5 @@
+
+ 
 document.addEventListener("DOMContentLoaded", () => {
     let p = document.querySelector('body');
     let e = document.getElementById("main");
@@ -328,10 +330,9 @@ console.log(`Your current browser is: ${language}`);
                   p.target.classList.remove('sho')
               }
           })
-      },{threshold: .2})     
-      
-          
+      },{threshold: .3})
           viewer.observe(aboutWord)
+         
    //for theme toggling 
   /*const originalColor= window.getComputedStyle(body).backgroundColor;
   
@@ -386,3 +387,59 @@ const  bright = document.querySelector('bright');
      content.style.height= 
      'auto'
  });
+
+  function loadPage(){
+    window.location.href='https://festocameragroup.com';
+  }
+  loadPage();
+  /*
+  this is a method for fetching data but its better to use fetch() new method
+  const xhr = new XMLHttpRequest;
+  const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=1db8025b8ee346adbed02e22b12d66b9'
+  xhr.open('GET', url, true);
+  xhr.setRequestHeader('Content-Type','application/json')
+  xhr.onload= function () {
+      if (xhr.status === 200) {
+          console.log(xhr.responseText)
+      }
+      else{
+          console.error(xhr.statusText)
+      }
+      // Tab to edit
+  }
+  xhr.send();
+  */
+  const xhr =new XMLHttpRequest;
+  xhr.open(method, url,async)//on async u write either true or false;
+  xhr.setRequestHeader('Content-Type','application/json');
+  xhr.onload= function () {
+      if (xhr.status === 200) {
+          console.log(xhr.responseText)
+          
+      }
+      else{
+          console.error(xhr.statusText)
+      }
+      // Tab to edit
+  }
+  
+// this is for adding slide in styles.to the skill.boxes
+/*const skilled = document.querySelectorAll('skilled');
+
+const review = new IntersectionObserver((entries)=>{
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('view');
+       
+        }
+        else{
+            entry.target.classList.remove('view')
+        }
+    })
+},{threshold: 0.5} );
+
+skilled.forEach((div)=> {
+   // review.observe(div)
+   div.style.display= 'none'
+})
+*/
