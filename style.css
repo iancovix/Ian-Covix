@@ -527,7 +527,7 @@ details .content-project{
     border-radius: 0px;
 }
 .loaders p{
-    border-radius: 0;
+    border-radius: 1px;
     transition: rotate(45px);
     background: linear-gradient(to top, white, #338AF0);
 }
@@ -767,4 +767,12 @@ box-shadow: 0 3px 6px #4889EA,
 }
 .aboutme .aboutwords{
     font-weight: 300;
+}
+.intro{
+    height: 100%;
+    max-height: 95%;
+    
+}
+.aboutme{
+    border-radius: 0;
 }
