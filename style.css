@@ -776,3 +776,11 @@ box-shadow: 0 3px 6px #4889EA,
 .aboutme{
     border-radius: 0;
 }
+.intro img{
+width: clamp(250px , calc(20vw+50px), 350px);
+object-fit : cover;
+height: clamp(250px , calc(20vw+50px), 350px);
+}
+#home{
+min-height: 100vh;
+}
