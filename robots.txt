@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /*
+Allow: /
 
 
 Sitemap: https://iancovix.vercel.app/sitemap.xml
